@@ -1,6 +1,6 @@
 name: Fibonacci Sequence CI
 
-on:[push]
+on: [push]
 
 jobs:
   build:
