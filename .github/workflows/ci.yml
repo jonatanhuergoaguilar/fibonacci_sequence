@@ -1,0 +1,11 @@
+name: Fibonacci Sequence CI
+
+on:[push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: gcc main.c -o fib_app
+      - run: ./fib_app
